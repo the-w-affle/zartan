@@ -163,15 +163,7 @@
             $("#healthcard").modal("hide");
         }
 
-        window.addEventListener('load', function () {
-            testconsent = '{{consent}}';
-            console.log("check_consent()");
-            console.log(testconsent);
-            if (testconsent.trim() == '')
-            {
-                $("#consentModal").modal("show");
-            }
-        })
+        
         function acceptcompleted() {
             console.log("acceptcompleted()");
             window.location = "/healthcare/acceptterms";
