@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card border-bottom">
-                    <div class="card-header">Patient Information</div>
+                    <div class="card-header">Traveler Information</div>
                     <div class="card-body">
                               <label for="exampleFormControlInput1">First Name</label>
                               <div class="form-group input-group">
@@ -364,15 +364,7 @@
                                     <option {% if gender=="Rather not say" %} selected="selected"{% endif %} value="Rather not say">Rather not say</option>
                                 </select>
                               </div>
-                               <label for="exampleFormControlInput1">Have you previously attended our facility?</label>
-                                  <div class="custom-control custom-control-solid custom-radio">
-                                    <input class="custom-control-input" id="customRadio1" value="true" type="radio" name="hasvisited">
-                                    <label class="custom-control-label" for="customRadio1">Yes</label>
-                                </div>
-                                <div class="custom-control custom-control-solid custom-radio">
-                                    <input class="custom-control-input" id="customRadio2" value="false" type="radio" name="hasvisited">
-                                    <label class="custom-control-label" for="customRadio2">No</label>
-                                </div>
+                               
                               <input name="timepicker" id="timepicker" class="form-control" type="hidden" value="">
                               <input name="user_id" id="user_id" class="form-control" type="hidden" value="{{ user_info2['id'] }}">
                               <input name="email" id="email" class="form-control" type="hidden" value="{{ user_info2['profile']['email'] }}">
@@ -381,7 +373,7 @@
             </div>
             <div class="col-md-6">
                  <div class="card border-bottom">
-                    <div class="card-header">Schedule an Appointment</div>
+                    <div class="card-header">Pick a flight time</div>
                         <div class="card-body">
                             <div class="form-group input-group">
                                 <div class="input-group-prepend">
@@ -405,7 +397,7 @@
                             </div>
 
                             <div class="form-group">
-                              <button type="submit" id="requestappt" class="btn btn-primary btn-block">Request Appointment</button>
+                              <button type="submit" id="requestappt" class="btn btn-primary btn-block">Book Flight</button>
                             </div>
                         </div>
                     </div>
